@@ -5,19 +5,19 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         /* Binary tree using Comparable interface */
-        BinaryTree<Car> binaryTree1 = new BinaryTree<>();
-        populateTree(binaryTree1);
+        BinaryTree<Car> binaryTreeComparable = new BinaryTree<>();
+        populateTree(binaryTreeComparable);
 
         System.out.println("[Comparable] Cars in ascending order: ");
-        for (Car car : binaryTree1.getItemsAscending())
+        for (Car car : binaryTreeComparable.getItemsAscending())
             System.out.println(car);
 
         /* Binary tree using Comparator interface */
-        BinaryTree<Car> binaryTree2 = new BinaryTree<>(new BrandsComparator());
-        populateTree(binaryTree2);
+        BinaryTree<Car> binaryTreeComparator = new BinaryTree<>(new BrandsComparator());
+        populateTree(binaryTreeComparator);
 
         System.out.println("\n\n[Comparator] Cars in ascending order: ");
-        for (Car car : binaryTree2.getItemsAscending())
+        for (Car car : binaryTreeComparator.getItemsAscending())
             System.out.println(car);
 
     }
