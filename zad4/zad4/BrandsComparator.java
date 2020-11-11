@@ -1,3 +1,4 @@
+package zad4;
 import java.util.Comparator;
 
 public class BrandsComparator implements Comparator<Car> {

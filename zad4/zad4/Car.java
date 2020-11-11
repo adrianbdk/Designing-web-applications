@@ -1,3 +1,4 @@
+package zad4;
 public class Car implements Comparable<Car>{
     String brand;
     String model;
@@ -13,17 +14,19 @@ public class Car implements Comparable<Car>{
 
     @Override
     public int compareTo(Car obj) {
+        boolean carBrandComparison = this.brand == obj.brand;
+
         if(this.horsePower != obj.horsePower)
             return this.horsePower - obj.horsePower;
-        return this.productionYear - obj.productionYear;
+        else return this.productionYear - obj.productionYear;
     }
 
     public String toString(){
         return "Car{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", horsePower=" + horsePower + '\'' +
-                ", productionYear=" + productionYear +
+                "brand = '" + brand + '\'' +
+                ", model = '" +  model + '\'' +
+                ", horsePower = " + horsePower + '\'' +
+                ", productionYear=" +  productionYear +
                 '}';
     }
 }
