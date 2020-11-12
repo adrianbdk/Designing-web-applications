@@ -6,14 +6,15 @@ public class BinaryTree<T extends Comparable<T>> {
     private Node<T> root = null;
     private Comparator<T> comparator = null;
 
-    public BinaryTree(Comparator<T> comparator){
-        this();
-        this.comparator = comparator;
-    }
 
     public BinaryTree(){
         root = null;
         comparator = Comparator.naturalOrder();
+    }
+
+    public BinaryTree(Comparator<T> comparator){
+        this();
+        this.comparator = comparator;
     }
 
 
@@ -42,13 +43,6 @@ public class BinaryTree<T extends Comparable<T>> {
         return current;
     }
 
-    public void traverseInOrder(Node<T> node) {
-        if(node != null) {
-             traverseInOrder(node.getLeftChild());
-             System.out.println(" " + node.getElement());
-             traverseInOrder(node.getRightChild());
-        }
-    }
 
     public ArrayList<T> getItemsAscending(){
         if (root == null)
@@ -69,6 +63,4 @@ public class BinaryTree<T extends Comparable<T>> {
 
         return descendingItems;
     }
-
-
 }
