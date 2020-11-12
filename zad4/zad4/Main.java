@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        /* Binary tree using Comparable interface */
+        /* Comparable */
         BinaryTree<Car> binaryTreeComparable = new BinaryTree<>();
         populateTree(binaryTreeComparable);
 
@@ -12,7 +12,7 @@ public class Main {
         for (Car car : binaryTreeComparable.getItemsAscending())
             System.out.println(car);
 
-        /* Binary tree using Comparator interface */
+        /* Comparator */
         BinaryTree<Car> binaryTreeComparator = new BinaryTree<>(new BrandsComparator());
         populateTree(binaryTreeComparator);
 
