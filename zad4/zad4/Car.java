@@ -14,8 +14,6 @@ public class Car implements Comparable<Car>{
 
     @Override
     public int compareTo(Car obj) {
-        boolean carBrandComparison = this.brand == obj.brand;
-
         if(this.horsePower != obj.horsePower)
             return this.horsePower - obj.horsePower;
         else return this.productionYear - obj.productionYear;

@@ -55,7 +55,7 @@ public class Main {
         binaryTree.addNode(new Car("Volvo", "XC60", 300, 2010));
         binaryTree.addNode(new Car("Ford", "Ecosport", 100, 2018));
 
-        binaryTree.addNode(new Car("Seat", "Terraco", 190, 2019));
+        binaryTree.addNode(new Car("Mercedes", "W126", 220, 1980));
         binaryTree.addNode(new Car("Citroen", "C4 Cactus", 99, 2016));
         binaryTree.addNode(new Car("Seat", "Mii", 75, 2013));
         binaryTree.addNode(new Car("Citroen", "SpaceTourer", 115, 2018));
